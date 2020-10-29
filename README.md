@@ -1,6 +1,6 @@
-# Node Server deployed in Vercel Demo
+# Node Server Deployed in Vercel
 
-## Demo link
+## Demo Link
 
 - Home Page: [https://node-server-in-vercel.vercel.app/](https://node-server-in-vercel.vercel.app/)
 - About Page: [https://node-server-in-vercel.vercel.app/about](https://node-server-in-vercel.vercel.app/about)
@@ -37,9 +37,11 @@ app.listen(port, () => console.log(`Server running on ${port}, http://localhost:
 
 ## Deployment
 
-1. `vercel`: init vercel setting. auto-generate `.vercel` folder
+1. `npm i -g vercel`
 
-2. Add `vercel.json` file: define node.js file path and root route path
+2. `vercel`: init vercel setting. auto-generate `.vercel` folder
+
+3. Add `vercel.json` file: define node.js file path and root route path
 
 ## Features
 
