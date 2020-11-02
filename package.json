@@ -1,29 +1,44 @@
 {
-  "name": "server-in-vercel",
+  "name": "node-express-next-typescript-demo",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server/dist/index.js",
   "scripts": {
-    "start": "node index.js",
+    "dev": "NODE_ENV=development ts-node --project tsconfig.server.json server/src/index.ts",
+    "build:server": "tsc --project tsconfig.server.json",
+    "build:next": "next build",
+    "build": "npm run build:next && npm run build:server",
+    "prod": "NODE_ENV=production node server/dist/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/andy770921/node-server-in-Vercel.git"
+    "url": "git+https://github.com/andy770921/nextjs-and-express-demo.git"
   },
   "keywords": [
     "nodeJS",
-    "server",
-    "deploy",
+    "express",
+    "next",
+    "typescript",
     "Vercel"
   ],
   "author": "andy chou",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/andy770921/node-server-in-Vercel/issues"
+    "url": "https://github.com/andy770921/nextjs-and-express-demo/issues"
   },
-  "homepage": "https://github.com/andy770921/node-server-in-Vercel#readme",
+  "homepage": "https://github.com/andy770921/nextjs-and-express-demo#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "next": "^10.0.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.8",
+    "@types/node": "^14.14.6",
+    "@types/react": "^16.9.55",
+    "ts-node": "^9.0.0",
+    "typescript": "^4.0.5"
   }
 }
