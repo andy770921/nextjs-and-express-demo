@@ -1,0 +1,1 @@
+{"ast":null,"code":"import { jsx as _jsx } from \"react/jsx-runtime\";\nimport React from 'react';\n\nfunction IndexPage() {\n  return /*#__PURE__*/_jsx(\"div\", {\n    children: \"Hello World Next - Typescript - Express\"\n  });\n}\n\nexport default IndexPage;","map":null,"metadata":{},"sourceType":"module"}
