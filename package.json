@@ -19,8 +19,7 @@
     "nodeJS",
     "express",
     "next",
-    "typescript",
-    "Vercel"
+    "typescript"
   ],
   "author": "andy chou",
   "license": "ISC",
